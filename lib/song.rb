@@ -15,7 +15,11 @@ class Song
   end
 
   def artist_name
-    Artist.select {|song| song.artist == self}
+    self.artist.name
   end
+
+  def artist_name
+  self.artist.name
+end
 
 end
